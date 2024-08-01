@@ -1,0 +1,15 @@
+{
+	"name": "login_signup_auth",
+	"description": "This is a workout tracker web-app by Nico Airoldi. The tech stack is MERN (Mongoose, Express, React, Node).",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "concurrently \"npm run dev --prefix node\" \"npm run dev --prefix vite-project\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^8.2.2"
+	}
+}
