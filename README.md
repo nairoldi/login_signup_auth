@@ -78,12 +78,6 @@ This is a login signup and auth starting point Nico Airoldi. The tech stack is M
     EXPOSE 3001
     Exposes port 3001 for the container.
 
-    Install pm2 and Add Start Script:
-    RUN npm install -g pm2
-    COPY start.sh /app/
-    RUN chmod +x /app/start.sh
-    Installs pm2 to manage processes and copies the start.sh script into the container, making it executable.
-
     Start the Application:
     CMD ["sh", "-c", "cd /app/node && npm run dev & cd /app/vite-project && npm run dev"]
     This command starts both the main Node.js application and the Vite development server. The & operator allows both commands to run simultaneously.
